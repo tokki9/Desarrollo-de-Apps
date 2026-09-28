@@ -1,8 +1,4 @@
-// ----------------------------------------------------------------------
-// ✏️ [CÓDIGO A COMPLETAR POR EL ESTUDIANTE - PASO 2.1]
-// Importa los componentes 'Link' y 'Outlet' desde 'react-router'
-// ----------------------------------------------------------------------
-
+import { Link, Outlet } from "react-router"; 
 
 export function Layout() {
   return (
@@ -12,24 +8,16 @@ export function Layout() {
         <h2>📍 Aplicación SPA - Desarrollo de Aplicaciones (VI Semestre)</h2>
         
         <nav style={{ display: "flex", gap: "15px" }}>
-          {/* ------------------------------------------------------------------ */}
-          {/* ✏️ [CÓDIGO A COMPLETAR POR EL ESTUDIANTE - PASO 2.2]              */}
-          {/* Crea los enlaces usando el componente <Link>:                      */}
-          {/* 1. <Link to="/">Inicio</Link>                                      */}
-          {/* 2. <Link to="/perfil/estudiante_vi">Mi Perfil</Link>               */}
-          {/* 3. <Link to="/ruta-inexistente">Probar 404</Link>                  */}
-          {/* ------------------------------------------------------------------ */}
-          
+          {/* PASO 2.2 */}
+          <Link to="/">Inicio</Link>
+          <Link to="/perfil/estudiante_vi">Mi Perfil</Link>               */}
+          <Link to="/ruta-inexistente">Probar 404</Link>
         </nav>
       </header>
 
       {/* ÁREA DE CONTENIDO DINÁMICO */}
       <main style={{ marginTop: "20px" }}>
-        {/* ------------------------------------------------------------------ */}
-        {/* ✏️ [CÓDIGO A COMPLETAR POR EL ESTUDIANTE - PASO 2.3]              */}
-        {/* Inserta aquí el marcador <Outlet /> para renderizar las vistas hijas */}
-        {/* ------------------------------------------------------------------ */}
-        
+        <Outlet />         
       </main>
     </div>
   );
