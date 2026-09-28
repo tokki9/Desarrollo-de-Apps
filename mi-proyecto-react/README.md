@@ -53,7 +53,6 @@ Aprender a estructurar la navegación del lado del cliente (**Client-Side Routin
 | `src/Home.jsx` | Vista principal (index) |
 | `src/Perfil.jsx` | Captura de parámetros dinámicos con useParams |
 | `src/NotFound.jsx` | Vista de error 404 con enlace de retorno |
-| `evidencias/` | Capturas de funcionamiento |
 | `index.html` | Punto de entrada HTML |
 | `package.json` | Dependencias del proyecto |
 | `vite.config.js` | Configuración de Vite |
