@@ -7,9 +7,6 @@
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 **Asignatura:** Desarrollo de Aplicaciones  
-**Nivel:** VI Semestre  
-**Modalidad:** Guiada / Individual  
-**Escala:** 0 a 20 Puntos
 
 </div>
 
@@ -49,18 +46,17 @@ Aprender a estructurar la navegación del lado del cliente (**Client-Side Routin
 
 ## 📁 Estructura del Proyecto
 
-mi-proyecto-react/
-├── src/
-│ ├── main.jsx → Configuración del router
-│ ├── Layout.jsx → Barra de navegación con Link y Outlet
-│ ├── Home.jsx → Vista principal (index)
-│ ├── Perfil.jsx → Captura de parámetros dinámicos con useParams
-│ └── NotFound.jsx → Vista de error 404 con enlace de retorno
-├── evidencias/ → Capturas de funcionamiento
-├── index.html
-├── package.json
-└── vite.config.js
-
+| Archivo | Descripción |
+|---------|-------------|
+| `src/main.jsx` | Configuración del router |
+| `src/Layout.jsx` | Barra de navegación con Link y Outlet |
+| `src/Home.jsx` | Vista principal (index) |
+| `src/Perfil.jsx` | Captura de parámetros dinámicos con useParams |
+| `src/NotFound.jsx` | Vista de error 404 con enlace de retorno |
+| `evidencias/` | Capturas de funcionamiento |
+| `index.html` | Punto de entrada HTML |
+| `package.json` | Dependencias del proyecto |
+| `vite.config.js` | Configuración de Vite |
 
 ---
 
