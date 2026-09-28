@@ -1,23 +1,41 @@
-import { Link, Outlet } from "react-router"; 
+import { Link, Outlet } from "react-router";
 
 export function Layout() {
   return (
-    <div style={{ fontFamily: "sans-serif", padding: "20px" }}>
-      {/* Encabezado fijo visible en todas las pantallas */}
-      <header style={{ borderBottom: "2px solid #0070f3", paddingBottom: "10px" }}>
-        <h2>📍 Aplicación SPA - Desarrollo de Aplicaciones (VI Semestre)</h2>
-        
-        <nav style={{ display: "flex", gap: "15px" }}>
-          {/* PASO 2.2 */}
-          <Link to="/">Inicio</Link>
-          <Link to="/perfil/estudiante_vi">Mi Perfil</Link>               */}
-          <Link to="/ruta-inexistente">Probar 404</Link>
-        </nav>
-      </header>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
+      <nav
+        style={{
+          marginBottom: "20px",
+          padding: "10px",
+          backgroundColor: "#eee",
+          borderRadius: "5px",
+        }}
+      >
+        <Link
+          to="/"
+          style={{
+            marginRight: "15px",
+            textDecoration: "none",
+            color: "#333",
+            fontWeight: "bold",
+          }}
+        >
+          Inicio
+        </Link>
+        <Link
+          to="/perfil/123"
+          style={{
+            textDecoration: "none",
+            color: "#333",
+            fontWeight: "bold",
+          }}
+        >
+          Perfil de Usuario
+        </Link>
+      </nav>
 
-      {/* ÁREA DE CONTENIDO DINÁMICO */}
-      <main style={{ marginTop: "20px" }}>
-        <Outlet />         
+      <main>
+        <Outlet />
       </main>
     </div>
   );
